@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --no-history",  
+    "deploy": "gh-pages -d dist",
     "deploy:github": "npm run build && npx gh-pages -d dist -b gh-pages",
     "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
     "dev:frontend": "vite",
